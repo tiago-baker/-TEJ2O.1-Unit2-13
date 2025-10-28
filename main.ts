@@ -5,4 +5,4 @@
  * This program ...
 */
 
-basic.showString('Hello, World!')
+
