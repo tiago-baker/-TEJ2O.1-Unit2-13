@@ -12,7 +12,7 @@ let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 // count down using neopixels
 input.onButtonPressed(Button.A, function () {
     // when counter1 = 4
-    if (counter1 == 4) {
+    while (counter1 == 4) {
         // show 4 neopixels
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -23,7 +23,7 @@ input.onButtonPressed(Button.A, function () {
         counter1 = counter1 - 1
     }
     // when counter1 = 3
-    if (counter1 == 3) {
+    while (counter1 == 3) {
         // show 3 neopixels
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -34,7 +34,7 @@ input.onButtonPressed(Button.A, function () {
         counter1 = counter1 - 1
     }
     // when counter1 = 2
-    if (counter1 == 2) {
+    while (counter1 == 2) {
         // show 2 neopixels
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -45,7 +45,7 @@ input.onButtonPressed(Button.A, function () {
         counter1 = counter1 - 1
     }
     // when counter1 = 1
-    if (counter1 == 1) {
+    while (counter1 == 1) {
         // show one neopixel
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -56,7 +56,7 @@ input.onButtonPressed(Button.A, function () {
         counter1 = counter1 - 1
     }
     // when counter1 = 0
-    if (counter1 == 0) {
+    while (counter1 == 0) {
         // show no neopixels
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
