@@ -22,7 +22,6 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1000)
         counter1 = counter1 - 1
     }
-
     // when counter1 = 3
     if (counter1 == 3) {
         // show 3 neopixels
@@ -34,7 +33,6 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1000)
         counter1 = counter1 - 1
     }
-
     // when counter1 = 2
     if (counter1 == 2) {
         // show 2 neopixels
@@ -46,7 +44,6 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1000)
         counter1 = counter1 - 1
     }
-
     // when counter1 = 1
     if (counter1 == 1) {
         // show one neopixel
@@ -58,7 +55,6 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1000)
         counter1 = counter1 - 1
     }
-
     // when counter1 = 0
     if (counter1 == 0) {
         // show no neopixels
@@ -68,8 +64,7 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.show()
         basic.pause(1000)
-
-        // reset counter for next press
+        // reset counter1 
         counter1 = 4
     }
 })
