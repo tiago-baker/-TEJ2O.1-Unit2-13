@@ -5,13 +5,6 @@
  * This program counts down
  */
 
-/* Copyright (c) 2020 MTHS All rights reserved
- *
- * Created by: Tiago Baker
- * Created on: Oct 2025
- * This program counts down
-*/
-
 // variables
 let counter1 = 4
 let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
