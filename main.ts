@@ -7,7 +7,7 @@
 
 // variables
 let counter1 = 4
-let neopixelStrip = neopixel.create(DigitalPin.P0, 4, NeoPixelMode.RGB)
+let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 
 // count down using neopixels
 input.onButtonPressed(Button.A, function () {
