@@ -2,7 +2,7 @@
  *
  * Created by: Tiago Baker
  * Created on: Oct 2025
- * This program counts down
+ * This program counts down using neopixels
  */
 
 // variables
@@ -24,6 +24,7 @@ input.onButtonPressed(Button.A, function () {
     // when counter1 = 4
     while (counter1 == 4) {
         // show 4 neopixels
+        basic.showString('4')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
@@ -31,10 +32,13 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
         basic.pause(1000)
         counter1 = counter1 - 1
+        basic.clearScreen()
     }
+
     // when counter1 = 3
     while (counter1 == 3) {
         // show 3 neopixels
+        basic.showString('3')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
@@ -42,10 +46,13 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
         basic.pause(1000)
         counter1 = counter1 - 1
+        basic.clearScreen()
     }
+
     // when counter1 = 2
     while (counter1 == 2) {
         // show 2 neopixels
+        basic.showString('2')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -53,10 +60,13 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
         basic.pause(1000)
         counter1 = counter1 - 1
+        basic.clearScreen()
     }
+
     // when counter1 = 1
     while (counter1 == 1) {
         // show one neopixel
+        basic.showString('1')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -64,17 +74,19 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
         basic.pause(1000)
         counter1 = counter1 - 1
+        basic.clearScreen()
     }
+
     // when counter1 = 0
     while (counter1 == 0) {
         // show no neopixels
+        basic.showString('0')
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
         neopixelStrip.show()
         basic.pause(1000)
-        // reset counter1 
-        counter1 = 4
+        basic.clearScreen()
     }
 })
